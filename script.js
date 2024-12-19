@@ -34,6 +34,8 @@ setInterval(displayTime, 1000);
 const body = document.body;
 body.style.color = 'white';
 body.style.margin = '0';
+body.style.padding = '0';
+body.style.boxSizing = 'border-box';
 body.style.height = '100vh';
 body.style.fontFamily = 'helvetica, sans-serif';
 body.style.background =
@@ -91,3 +93,77 @@ for (let option of selections) {
   option.style.border = 'none';
   option.style.color = 'white';
 }
+
+// Olympics Section Styles
+
+const olympicsSection = document.querySelector('#olympics');
+
+olympicsSection.style.padding = '40px 50px';
+
+const olympics_para = document.querySelector('#olympics-para');
+
+olympics_para.style.fontSize = '50px';
+
+const allOlympics = document.querySelectorAll('#olympics *');
+
+for (let item of allOlympics) {
+  item.style.margin = '3px 0';
+}
+
+// Countdown Section Styles
+
+const countdown_section = document.querySelector('#countdown');
+
+countdown_section.style.padding = '75px 50px';
+countdown_section.style.paddingTop = '150px';
+
+countdown_section.style.display = 'inline-block';
+
+const no_of_days = document.querySelector('#no-of-days');
+
+no_of_days.style.fontSize = '150px';
+no_of_days.style.fontWeight = '600';
+no_of_days.style.margin = '0';
+
+const days_para = document.querySelector('#days');
+days_para.style.textAlign = 'center';
+days_para.style.marginTop = '0';
+days_para.style.marginLeft = '-20px';
+days_para.style.fontSize = '25px';
+
+const timing = document.querySelector('#timing');
+timing.style.display = 'flex';
+timing.style.justifyContent = 'space-between';
+
+const numbers = document.querySelectorAll('.number');
+
+for (let number of numbers) {
+  number.style.fontSize = '70px';
+  number.style.margin = '0';
+}
+
+const hours = document.querySelector('#hours');
+
+hours.style.textAlign = 'center';
+hours.style.margin = '0';
+
+const minutes = document.querySelector('#minutes');
+
+minutes.style.textAlign = 'center';
+minutes.style.margin = '0';
+
+const seconds = document.querySelector('#seconds');
+
+seconds.style.textAlign = 'center';
+seconds.style.margin = '0';
+
+const toGoPara = document.querySelector('#to-go');
+
+toGoPara.style.textAlign = 'center';
+toGoPara.style.margin = '0';
+
+const footpara = document.querySelector('footer p');
+footpara.style.position = 'fixed';
+footpara.style.bottom = '0';
+footpara.style.paddingLeft = '5px';
+footpara.style.marginBottom = '5px';
