@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olympics 2028 Timer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="head">
+      <h1 id="logo">days.to</h1>
+      <nav id="dropdown">
+        <label for="when">When Is</label>
+        <select name="when" id="when">
+          <option value=""></option>
+        </select>
+        <label for="holidays">Holidays</label>
+        <select name="holidays" id="holidays">
+          <option value=""></option>
+        </select>
+        <label for="events">Events</label>
+        <select name="events" id="events">
+          <option value=""></option>
+        </select>
+        <label for="calender">Calender</label>
+        <select name="calender" id="calender">
+          <option value=""></option>
+        </select>
+        <label for="help">Help</label>
+        <select name="help" id="help">
+          <option value=""></option>
+        </select>
+      </nav>
+      <div id="search-box">
+        <label for="search">
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Search Here"
+          />
+          | Search
+        </label>
+      </div>
+    </header>
+    <main>
+      <h4>How many days until</h4>
+      <h2>Summer Olympics 2028</h2>
+      <p id="date">
+        <i class="fas fa-calendar-alt"></i> Friday,21 July 2028 00:00
+      </p>
+      <p id="location">
+        <i class="fas fa-map-marker-alt"></i> LOS Angeles, USA
+      </p>
+      <div id="no-of-days"></div>
+      <p id="days">days</p>
+      <div class="timing">
+        <div id="hours">
+          <p class="number"></p>
+          <p class="text">hours</p>
+        </div>
+        <div id="minutes">
+          <p class="number"></p>
+          <p class="text">minutes to go</p>
+        </div>
+        <div id="seconds">
+          <p class="number"></p>
+          <p class="text">seconds</p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
